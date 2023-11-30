@@ -1,0 +1,66 @@
+.is-wrong {
+  animation-duration: 0.5s;
+  animation-name: change-wrong-background;
+  animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  animation-fill-mode: none;
+}
+
+.is-true {
+  animation-duration: 0.5s;
+  animation-name: change-true-background;
+  animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  animation-fill-mode: none;
+}
+
+@keyframes change-wrong-background {
+
+
+  0% {
+    background-color: red;
+    color: white;
+  }
+
+  100% {
+    background-color: rgb(214 211 209);
+  }
+}
+
+@keyframes change-true-background {
+
+
+  0% {
+    background-color: green;
+    color: white;
+  }
+
+  100% {
+    background-color: rgb(214 211 209);
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+h1 {
+  text-align: center;
+  height: 100px;
+  margin-top: 48px;
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 64px;
+  font-weight: bold;
+  text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+}
