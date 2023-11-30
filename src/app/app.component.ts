@@ -116,7 +116,7 @@ export class AppComponent implements OnInit {
         this.TIMECONFIG = 45
         break;
       case 'easy':
-        this.AMOUNT = 2
+        this.AMOUNT = 8
         this.TIMECONFIG = 60
         break
     }
